@@ -12,7 +12,7 @@ import { ProdutosService } from 'src/app/produtos.service';
 })
 export class DetalhesProdutoComponent {
   produto: IProduto | undefined;
-  estoque = 1;
+  quantidade = 1;
 
   constructor(
     private produtosService: ProdutosService,
@@ -25,16 +25,17 @@ export class DetalhesProdutoComponent {
 
   ngOnInit(){
     const routeParams = this.route.snapshot.paramMap;
-    const produtoId = Number(routeParams.get("id"));
+    const produtoId = Number(routeParams.get('id'));
     this.produto = this.produtosService.getOne(produtoId);
+    return this.produto;
   }
 
   adicionarAoCarrinho(){
-    this.notificacao.notificar("O produto foi adicionado ao carrinho");
+    this.notificacao.notificar('O produto foi adicionado ao carrinho');
     const produto: ICarrinho = {
-      ...this.produto!,
-      estoque: this.estoque
-    }
+      ...this.produto!, quantidade: this.quantidade
+    };
+
     this.carrinhoService.adicionarAoCarrinho(produto);
   }
 

@@ -3,16 +3,16 @@
     <img [src]="produto?.imagem">
   </div>
   <div class="product-description__container">
-    <h2 class="product__name">{{ produto?.descricao }}</h2>
-    <h2 class="product__price">{{ produto?.preco | currency: 'BRL' }}</h2>
+    <h2 class="product__name">{{produto?.descricao}}</h2>
+    <h2 class="product__price">{{produto?.preco | currency: 'BRL'}}</h2>
     <p>Estoque: </p>
     <label>
       Quatidade:
-      <input type="number" min="1" [(ngModel)]="estoque">
+      <input type="number" min="1" [(ngModel)]="quantidade">
       unidade(s)
     </label>
     <p class="product__avaiability">
-      {{ produto?.estoque }} unidade(s) em estoque
+      {{produto?.estoque}} unidade(s) em estoque
     </p>
     <button (click)="adicionarAoCarrinho()">Adicionar ao carrinho</button>
   </div>
