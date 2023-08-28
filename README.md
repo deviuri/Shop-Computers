@@ -16,7 +16,7 @@ Bem-vindo ao Shop-Computers, um projeto desenvolvido em Angular para criar uma l
   - Angular CLI
 
 - Como Executar o Projeto:
- - Clone este repositório para o seu ambiente local.
+  - Clone este repositório para o seu ambiente local.
   - git clone https://github.com/deviuri/shop-computers.git
   - Navegue até o diretório do projeto.
   - cd shop-computers
