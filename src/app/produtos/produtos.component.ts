@@ -1,3 +1,4 @@
+import { produtos } from './../produtos';
 import { Component, OnInit } from '@angular/core';
 import { IProduto } from 'src/app/produtos';
 import { ProdutosService } from '../produtos.service';
@@ -20,6 +21,18 @@ export class ProdutosComponent {
   }
 
   ngOnInit(){
-    this.produtos = this.produtoService.getAll();
+    const produtos = this.produtoService.getAll();
+
+    this.router.queryParamMap.subscribe(params => {
+      const descricao = params.get("descricao")?.toLocaleLowerCase();
+
+
+      if(descricao){
+        this.produtos = produtos.filter(produto => produto.descricao.toLowerCase().includes(descricao));
+        return;
+      }
+
+      this.produtos = produtos;
+    })
   }
 }

@@ -8,7 +8,9 @@ import { FooterComponent } from './footer/footer.component';
 import { CommonModule } from '@angular/common';
 import { NaoEncontradoComponent } from './nao-encontrado/nao-encontrado.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSnackBarModule } from "@angular/material/snack-bar"
+import { MatSnackBarModule } from "@angular/material/snack-bar";
+import { BarraDePesquisaComponent } from './barra-de-pesquisa/barra-de-pesquisa.component'
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,13 +18,15 @@ import { MatSnackBarModule } from "@angular/material/snack-bar"
     HeaderComponent,
     FooterComponent,
     NaoEncontradoComponent,
+    BarraDePesquisaComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CommonModule,
     BrowserAnimationsModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
