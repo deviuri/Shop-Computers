@@ -1,27 +1,36 @@
 # ShopComputers
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+<h2>Link para vizualizar ou pode clonar o repositório: https://deviuri.github.io/Shop-Computers </h2>
 
-## Development server
+<h2>Shop-Computers: Projeto de Loja de Produtos de Computadores
+Bem-vindo ao Shop-Computers, um projeto desenvolvido em Angular para criar uma loja virtual de produtos de computadores. Este projeto visa demonstrar as habilidades de desenvolvimento web usando a estrutura Angular, oferecendo aos usuários uma interface intuitiva para explorar e comprar produtos relacionados a computadores.</h2>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<p>Funcionalidades Principais
+O projeto Shop-Computers inclui as seguintes funcionalidades principais:
 
-## Code scaffolding
+Página Inicial: Os usuários são recebidos com uma página inicial atraente que exibe os produtos.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Navegação: Os usuários podem explorar produtos específicas através da barra de pesquisa.
 
-## Build
+Detalhes do Produto: Cada produto tem uma página de detalhes que mostra informações detalhadas, como descrição, estoque e preço.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Carrinho de Compras: Os usuários podem adicionar produtos ao carrinho de compras, onde podem revisar, atualizar quantidades e remover itens antes de finalizar a compra.
 
-## Running unit tests
+Pré-requisitos
+Antes de começar a executar o projeto, certifique-se de ter as seguintes ferramentas instaladas:
+Node.js
+Angular CLI
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Como Executar o Projeto
+Clone este repositório para o seu ambiente local.
+git clone https://github.com/deviuri/shop-computers.git
+Navegue até o diretório do projeto.
 
-## Running end-to-end tests
+cd shop-computers
+Instale as dependências do projeto.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+npm install
+Inicie o servidor de desenvolvimento.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+ng serve
+Abra um navegador e acesse http://localhost:4200 para visualizar a aplicação.<p>
