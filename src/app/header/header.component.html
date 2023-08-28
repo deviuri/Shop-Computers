@@ -16,7 +16,7 @@
             <span class="badge-carrinho"> {{ carrinhoService.obtemCarrinho().length }} </span>
           </a>
         </li>
-        <li><a>Contato</a></li>
+        <li routerLink="/contato"><a>Contato</a></li>
         <li>
           <a><i class="fa-brands fa-linkedin"></i></a>
         </li>
@@ -26,8 +26,8 @@
       </ul>
     </nav>
     <form class="search-form">
-      <input type="text" />
-      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      <input type="text" name="descricao"/>
+      <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
     </form>
   </div>
 </header>
