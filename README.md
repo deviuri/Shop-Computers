@@ -1,6 +1,6 @@
 # ShopComputers
 
-<h2>Link para vizualizar ou pode clonar o repositório: https://deviuri.github.io/Shop-Computers </h2>
+<h3>Link para vizualizar: https://deviuri.github.io/Shop-Computers </h3>
 
 <p>Shop-Computers: Projeto de Loja de Produtos de Computadores
 Bem-vindo ao Shop-Computers, um projeto desenvolvido em Angular para criar uma loja virtual de produtos de computadores. Este projeto visa demonstrar as habilidades de desenvolvimento web usando a estrutura Angular, oferecendo aos usuários uma interface intuitiva para explorar e comprar produtos relacionados a computadores.
